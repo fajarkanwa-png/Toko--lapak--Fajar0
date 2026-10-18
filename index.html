@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>TOKO LAPAK AJA — Top Up Free Fire</title>
+<style>
+:root{--yellow:#ffd21f;--bg:#0b0b0d;--panel:#17171b;--muted:#b8b8c2;--line:#303038;--green:#22c55e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#4a3700 0,transparent 45%),var(--bg);color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#0b0b0deF;border-bottom:1px solid #302a13;backdrop-filter:blur(12px)}
+.nav{max-width:1100px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:1000;letter-spacing:.5px}.brand span{color:var(--yellow)}.pill{font-size:12px;border:1px solid #51451b;border-radius:99px;padding:7px 10px;color:var(--yellow)}
+.wrap{max-width:1100px;margin:auto;padding:24px 18px 60px}
+.hero{position:relative;overflow:hidden;border:1px solid #4a3b12;border-radius:24px;padding:clamp(24px,6vw,58px);background:linear-gradient(120deg,#211a06,#151518 55%,#291d00);min-height:300px}
+.hero:after{content:"";position:absolute;width:250px;height:250px;right:7%;top:25px;border-radius:50%;background:radial-gradient(circle,#ffd21f44,transparent 68%);animation:pulse 3s ease-in-out infinite}
+.heroText{position:relative;z-index:1;max-width:650px}.eyebrow{color:var(--yellow);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(34px,7vw,64px);line-height:.98;margin:14px 0}h1 span{color:var(--yellow)}.hero p{color:#d4d4da;max-width:560px;line-height:1.7}
+.btn{border:0;border-radius:12px;padding:13px 17px;font-weight:850;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.primary{background:var(--yellow);color:#171300}.secondary{background:#24242b;color:#fff;border:1px solid #3a3a44}.whatsapp{background:#167c42;color:white}
+.mascot{position:absolute;right:10%;bottom:0;width:170px;height:210px;z-index:1;animation:float 3s ease-in-out infinite;opacity:.9}
+.mascot .head{position:absolute;left:48px;top:20px;width:78px;height:78px;border:4px solid #e9e9e9;border-radius:25px 25px 34px 34px;background:linear-gradient(135deg,#3b3b43,#111);box-shadow:0 0 24px #ffd21f44}
+.mascot .visor{position:absolute;left:57px;top:46px;width:62px;height:19px;background:var(--yellow);border-radius:6px;box-shadow:0 0 18px #ffd21f}
+.mascot .body{position:absolute;left:35px;top:100px;width:105px;height:110px;border:4px solid #777;border-radius:30px 30px 0 0;background:linear-gradient(130deg,#444,#111)}
+.mascot .stripe{position:absolute;left:52px;top:123px;width:70px;height:7px;background:var(--yellow);transform:rotate(-15deg)}
+section{margin-top:36px}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}h2{font-size:clamp(23px,4vw,32px);margin:0}.muted{color:var(--muted);font-size:14px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{background:linear-gradient(150deg,#1d1d23,#131316);border:1px solid var(--line);border-radius:18px;padding:18px;position:relative;overflow:hidden}
+.card.selected{border-color:var(--yellow);box-shadow:0 0 0 1px #ffd21f55,0 10px 35px #ffd21f0e}
+.diamond{font-size:35px;filter:drop-shadow(0 0 10px #69caff66)}.card h3{margin:9px 0 4px;font-size:19px}.price{font-size:24px;font-weight:950;color:var(--yellow)}.old{font-size:12px;color:#888;text-decoration:line-through}.promo{position:absolute;right:10px;top:10px;background:#f04438;color:#fff;font-size:10px;font-weight:900;padding:5px 7px;border-radius:7px}
+.card button{width:100%;margin-top:14px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step{border:1px solid var(--line);border-radius:15px;padding:17px;background:#151519}.step b{color:var(--yellow);display:block;margin-bottom:6px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:clamp(18px,4vw,28px)}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:13px;font-weight:750;margin-bottom:7px;color:#e6e6eb}input,select{width:100%;background:#0e0e11;color:#fff;border:1px solid #41414b;border-radius:11px;padding:13px;font:inherit;outline:none}input:focus,select:focus{border-color:var(--yellow)}.full{grid-column:1/-1}.summary{background:#101014;border:1px dashed #5a4b17;padding:15px;border-radius:13px;line-height:1.8;margin:15px 0}.notice{font-size:12px;color:#c9c9d1;line-height:1.6;margin-top:12px}.authrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}.status{font-size:13px;color:#f4d976}
+footer{border-top:1px solid var(--line);padding:24px 18px;text-align:center;color:#999;font-size:12px;line-height:1.7}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-13px) rotate(2deg)}}@keyframes pulse{0%,100%{transform:scale(.9);opacity:.6}50%{transform:scale(1.12);opacity:1}}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mascot{right:-25px;transform:scale(.8);transform-origin:bottom right;opacity:.45}.hero{min-height:320px}.steps{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.sectionHead{align-items:start;flex-direction:column}}
+@media(max-width:380px){.grid{grid-template-columns:1fr}.mascot{opacity:.25}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">⚡ TOKO <span>LAPAK AJA</span></div><div class="pill" id="storeStatus">● Memeriksa jam toko…</div></div></header>
+<main class="wrap">
+<div class="hero">
+ <div class="heroText"><div class="eyebrow">Top up cepat • Promo spesial</div>
+ <h1>ISI DIAMOND.<br><span>GAS BOOYAH!</span></h1>
+ <p>Top up Free Fire di Toko Lapak Aja. Pilih paket, masukkan ID pemain, lalu ikuti petunjuk pembayaran DANA. Pastikan ID dan nominal sudah benar sebelum memesan.</p>
+ <a class="btn primary" href="#paket">Pilih Diamond ↓</a> <a class="btn secondary" href="#pesan">Pesan sekarang</a>
+ </div>
+ <div class="mascot" aria-hidden="true"><div class="head"></div><div class="visor"></div><div class="body"></div><div class="stripe"></div></div>
+</div>
+<section>
+ <div class="sectionHead"><div><div class="eyebrow">Benefit</div><h2>Top up makin seru</h2></div><div class="muted">Promo ditampilkan sebagai penawaran toko; harga final mengikuti paket yang dipilih.</div></div>
+ <div class="steps"><div class="step"><b>01 / Pilih paket</b><span class="muted">Pilih jumlah diamond sesuai kebutuhan.</span></div><div class="step"><b>02 / Isi data</b><span class="muted">Masukkan ID Free Fire dan nomor DANA pengirim.</span></div><div class="step"><b>03 / Konfirmasi</b><span class="muted">Kirim detail pesanan melalui WhatsApp dan tunggu verifikasi.</span></div></div>
+</section>
+<section id="paket">
+ <div class="sectionHead"><div><div class="eyebrow">Paket diamond</div><h2>Pilih paket favoritmu</h2></div><div class="pill">🔥 PROMO TOKO</div></div>
+ <div class="grid">
+  <article class="card" data-pack="70" data-price="10000"><span class="promo">HEMAT</span><div class="diamond">💎</div><h3>70 Diamond</h3><div class="price">Rp10.000</div><div class="muted">Paket pemula</div><button class="btn secondary choose" type="button">Pilih paket</button></article>
+  <article class="card" data-pack="140" data-price="20000"><span class="promo">POPULER</span><div class="diamond">💎💎</div><h3>140 Diamond</h3><div class="price">Rp20.000</div><div class="muted">Paket favorit</div><button class="btn secondary choose" type="button">Pilih paket</button></article>
+  <article class="card" data-pack="355" data-price="50000"><span class="promo">BEST DEAL</span><div class="diamond">💎💎💎</div><h3>355 Diamond</h3><div class="price">Rp50.000</div><div class="muted">Makin banyak diamond</div><button class="btn secondary choose" type="button">Pilih paket</button></article>
+  <article class="card" data-pack="720" data-price="100000"><span class="promo">MEGA PACK</span><div class="diamond">💎✨</div><h3>720 Diamond</h3><div class="price">Rp100.000</div><div class="muted">Paket besar</div><button class="btn secondary choose" type="button">Pilih paket</button></article>
+ </div>
+</section>
+<section id="pesan">
+ <div class="sectionHead"><div><div class="eyebrow">Checkout</div><h2>Detail pesanan</h2></div></div>
+ <div class="panel">
+  <div class="authrow"><button class="btn secondary" id="googleBtn" type="button">G  Login dengan Google</button><span class="status" id="authStatus">Login Google diperlukan sebelum memesan.</span></div>
+  <div class="notice">Agar login Google benar-benar berfungsi, pemilik website perlu memasukkan konfigurasi Firebase sendiri di bagian CONFIG pada kode dan mengaktifkan Google Sign-In. Jangan masukkan kata sandi Google ke formulir website.</div>
+  <form id="orderForm">
+   <div class="formgrid">
+    <div><label for="ffid">ID pemain Free Fire *</label><input id="ffid" inputmode="numeric" required placeholder="Contoh: 123456789"></div>
+    <div><label for="nickname">Nickname (opsional)</label><input id="nickname" placeholder="Nama di game"></div>
+    <div><label for="pack">Paket diamond *</label><select id="pack" required><option value="">Pilih paket…</option><option value="70">70 Diamond — Rp10.000</option><option value="140">140 Diamond — Rp20.000</option><option value="355">355 Diamond — Rp50.000</option><option value="720">720 Diamond — Rp100.000</option></select></div>
+    <div><label for="payer">Nomor DANA pengirim *</label><input id="payer" type="tel" inputmode="numeric" required placeholder="Nomor DANA kamu"></div>
+   </div>
+   <div class="summary" id="summary">Pilih paket untuk melihat ringkasan pesanan.<br><b>Metode bayar:</b> DANA<br><b>Nomor tujuan:</b> <span id="danaDisplay">081287811860</span></div>
+   <button class="btn primary" type="submit" style="width:100%">Lanjutkan ke WhatsApp</button>
+   <div class="notice">Pesanan belum dianggap dibayar atau berhasil hanya karena tombol ditekan. Transfer harus diverifikasi oleh penjual. Jangan bagikan PIN atau OTP DANA/Google.</div>
+  </form>
+ </div>
+</section>
+<section>
+ <div class="panel"><div class="eyebrow">Jam operasional</div><h2>04.00–24.00 WIB</h2><p class="muted">Website bisa dibuka kapan saja selama hosting aktif. Jam ini hanya menunjukkan jam layanan toko; website statis tidak bisa otomatis mematikan diri tepat tengah malam. Pesanan di luar jam layanan dapat ditanggapi saat toko buka kembali.</p><p class="muted">Kontak WhatsApp: <b>0812-8781-1860</b></p><a class="btn whatsapp" href="https://wa.me/6281287811860" target="_blank" rel="noopener">Chat WhatsApp toko</a></div>
+</section>
+</main>
+<footer>© <span id="year"></span> TOKO LAPAK AJA • Fan-made storefront, bukan situs resmi Garena.<br>Pengiriman diamond memerlukan verifikasi pembayaran dan layanan top-up yang sah.</footer>
+
+<!-- Firebase opsional: isi konfigurasi dari Firebase Console dan gunakan domain GitHub Pages yang sudah diotorisasi. -->
+<script type="module">
+const CONFIG = {
+  apiKey: "ISI_API_KEY_FIREBASE",
+  authDomain: "ISI_PROJECT_ID.firebaseapp.com",
+  projectId: "ISI_PROJECT_ID",
+  appId: "ISI_APP_ID"
+};
+const DANA_NUMBER = "081287811860";
+const WHATSAPP_NUMBER = "6281287811860";
+let currentUser = null;
+const prices = {"70":10000,"140":20000,"355":50000,"720":100000};
+const rupiah = n => new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
+const pack = document.getElementById("pack");
+const summary = document.getElementById("summary");
+const authStatus = document.getElementById("authStatus");
+const googleBtn = document.getElementById("googleBtn");
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("danaDisplay").textContent = DANA_NUMBER;
+
+function updateSummary(){
+ const p=pack.value;
+ summary.innerHTML = p ? `<b>${p} Diamond</b><br><b>Total:</b> ${rupiah(prices[p])}<br><b>Metode bayar:</b> DANA<br><b>Nomor tujuan:</b> ${DANA_NUMBER}` : `Pilih paket untuk melihat ringkasan pesanan.<br><b>Metode bayar:</b> DANA<br><b>Nomor tujuan:</b> ${DANA_NUMBER}`;
+}
+pack.addEventListener("change",updateSummary);
+document.querySelectorAll(".choose").forEach(btn=>btn.addEventListener("click",()=>{
+ const card=btn.closest(".card");pack.value=card.dataset.pack;updateSummary();
+ document.querySelectorAll(".card").forEach(c=>c.classList.toggle("selected",c===card));
+ document.getElementById("pesan").scrollIntoView({behavior:"smooth"});
+}));
+
+function storeHours(){
+ const now=new Date();
+ const minutes=now.getHours()*60+now.getMinutes();
+ const open=minutes>=240 && minutes<1440;
+ const el=document.getElementById("storeStatus");
+ el.textContent=open?"● TOKO BUKA":"● TOKO TUTUP";
+ el.style.color=open?"#4ade80":"#fca5a5";
+}
+storeHours();
+setInterval(storeHours,60000);
+
+// Google Sign-In memakai Firebase Auth. Isi CONFIG dan aktifkan Google provider di Firebase Console.
+const configured = CONFIG.apiKey !== "ISI_API_KEY_FIREBASE" &&
+                   CONFIG.projectId !== "ISI_PROJECT_ID" &&
+                   CONFIG.appId !== "ISI_APP_ID";
+if(configured){
+ try{
+  const {initializeApp}=await import("https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js");
+  const {getAuth,GoogleAuthProvider,signInWithPopup,onAuthStateChanged}=await import("https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js");
+  const app=initializeApp(CONFIG);const auth=getAuth(app);const provider=new GoogleAuthProvider();
+  googleBtn.addEventListener("click",async()=>{
+   try{await signInWithPopup(auth,provider)}catch(e){authStatus.textContent="Login gagal: "+(e.code||"silakan coba lagi");}
+  });
+  onAuthStateChanged(auth,user=>{
+   currentUser=user;
+   authStatus.textContent=user?`Login sebagai ${user.email}`:"Login Google diperlukan sebelum memesan.";
+   googleBtn.textContent=user?"✓ Google sudah login":"G  Login dengan Google";
+  });
+ }catch(e){authStatus.textContent="Firebase belum siap. Periksa konfigurasi dan koneksi internet.";}
+}else{
+ googleBtn.addEventListener("click",()=>alert("Login Google belum aktif. Pemilik website harus mengisi CONFIG Firebase di kode dan mengaktifkan Google Sign-In."));
+}
+
+document.getElementById("orderForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(!currentUser){alert("Silakan login dengan Google terlebih dahulu. Login harus dikonfigurasi pemilik website melalui Firebase.");return;}
+ const ffid=document.getElementById("ffid").value.trim();
+ const nickname=document.getElementById("nickname").value.trim();
+ const payer=document.getElementById("payer").value.trim();
+ const p=pack.value;
+ if(!ffid||!payer||!p){alert("Lengkapi data pesanan terlebih dahulu.");return;}
+ if(!/^\d{5,20}$/.test(ffid)){alert("Periksa ID Free Fire. Masukkan angka ID pemain yang benar.");return;}
+ if(!/^[0-9+\-\s]{8,18}$/.test(payer)){alert("Periksa nomor DANA pengirim.");return;}
+ const message=[
+  "Halo Toko Lapak Aja, saya ingin konfirmasi pesanan top up Free Fire.",
+  "",
+  "Email Google: "+(currentUser.email||"-"),
+  "ID Free Fire: "+ffid,
+  "Nickname: "+(nickname||"-"),
+  "Paket: "+p+" Diamond",
+  "Total: "+rupiah(prices[p]),
+  "Nomor DANA pengirim: "+payer,
+  "Nomor DANA tujuan: "+DANA_NUMBER,
+  "",
+  "Mohon konfirmasi cara pembayaran dan status pesanan. Saya memahami diamond dikirim setelah pembayaran diverifikasi."
+ ].join("\n");
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank","noopener");
+});
+</script>
+</body>
+</html>
